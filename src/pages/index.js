@@ -10,7 +10,7 @@ const Home = () => (
       <div className="flex justify-center space-x-4">
         <Title>da.niel</Title>
         <a
-          className="inline-flex p-1 text-gray-100 rounded-full bg-cobalt hover:bg-cb-dusty-blue"
+          className="inline-flex p-1 text-gray-100 rounded-full text-cobalt dark:text-cb-light-blue hover:text-cb-mint"
           href="https://github.com/b4conjuice/da.niel"
           target="_blank"
           rel="noopener noreferrer"
@@ -25,10 +25,11 @@ const Home = () => (
           </svg>
         </a>
       </div>
-      <p className="px-4 text-2xl text-center text-cobalt sm:text-3xl">
-        url shortener using <br className="block md:hidden" />
+      <p className="px-4 text-2xl text-center sm:text-3xl">
+        <span className="font-semibold dark:text-cb-orange">url shortener</span>{' '}
+        using <br className="block md:hidden" />
         <a
-          className="font-semibold hover:underline"
+          className="font-semibold hover:underline dark:text-cb-light-blue"
           href="https://nextjs.org/docs/api-reference/next.config.js/redirects"
           target="_blank"
           rel="noopener noreferrer"
@@ -40,10 +41,12 @@ const Home = () => (
         {Object.entries(redirects).map(([key, value]) => (
           <li
             key={key}
-            className="flex items-center justify-center space-x-2 text-cb-dusty-blue"
+            className="flex items-center justify-center space-x-2 text-cb-dusty-blue dark:text-gray-100"
           >
             <Link href={`/${key}`}>
-              <a className="font-semibold hover:underline">/{key}</a>
+              <a className="font-semibold hover:underline dark:text-cb-mint">
+                /{key}
+              </a>
             </Link>{' '}
             <svg
               xmlns="http://www.w3.org/2000/svg"
@@ -59,17 +62,17 @@ const Home = () => (
             </svg>
             <a
               href={value}
-              className="font-semibold hover:underline"
+              className="font-semibold hover:underline dark:text-cb-mint"
               target="_blank"
               rel="noopener noreferrer"
             >
-              {value}
+              {value.replace('https://', '')}
             </a>
           </li>
         ))}
       </ul>
     </main>
-    <footer className="pb-4 text-2xl text-center text-gray-100 bg-cobalt sm:text-3xl">
+    <footer className="py-4 text-2xl text-center text-gray-100 bg-cobalt dark:bg-cb-dark-blue sm:text-3xl">
       <div className="lg:container lg:mx-auto lg:max-w-3xl">
         <div>
           built{' '}

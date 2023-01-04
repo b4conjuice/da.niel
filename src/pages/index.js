@@ -10,7 +10,7 @@ const Home = () => (
       <div className="flex justify-center space-x-4">
         <Title>da.niel</Title>
         <a
-          className="inline-flex p-1 text-gray-100 rounded-full dark:text-cb-light-blue hover:text-cb-mint"
+          className="inline-flex p-1 rounded-full text-cobalt dark:text-cb-light-blue hover:text-cb-mint"
           href="https://github.com/b4conjuice/da.niel"
           target="_blank"
           rel="noopener noreferrer"

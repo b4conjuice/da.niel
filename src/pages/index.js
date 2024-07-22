@@ -79,7 +79,7 @@ const Home = () => (
           built{' '}
           <a
             className="font-semibold hover:underline text-cb-yellow"
-            href="https://with-bacon.niel.to"
+            href="https://with-bacon.dlopez.app/"
             target="_blank"
             rel="noopener noreferrer"
           >
